@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+<!------------------------------------- CDM Links ------------------------------>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+<!-- for a Responsive website - add this code -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- I have used few w3 css codes which can be found only in w3schools, so i add their link here -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<!-- give an external link for social media -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+
+<!----------------------------------- JAVASCRIPTS -------------------------------->
+<script>
+  // Get the video
+var video = document.getElementById("myVideo");
+</script>
+
+<!-------------------------------------- CSS ------------------------------------->
+<style>
+
+  /* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  position: sticky;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: sticky;
+  bottom: 80px;
+  /*background: rgba(0, 0, 0, 0.5);*/
+  color: #212529;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+h2,h3,h4,h5,h6 {font-family: "Oswald"}   /* headings other than h1 is oswald */
+
+body { 
+  font-family: Arial, Helvetica, sans-serif       /* body font */
+  .w3-bar-block .w3-bar-item {padding:20px}
+}
+
+
+.donate {
+font-family: 'Pacifico', cursive;
+font-size: 35px;
+color: #ff1493;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+
+</style>
+
+
+<!-- Navbar will be inside Head -->
+<!--------------------------- NAV BAR ------------------------------>
+
+
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">  <!-- if yu need the text as dark,you need to write navbar light-->
+  <!-- Brand -->
+  <a class="donate" href="index.html">Daily Donation</a>
+
+  <!-- Links -->
+ 
+  <ul class="navbar-nav ml-auto">    <!-- ml stands for Margin left, and if you need contents in right, add left -->
+    <li class="nav-item pt-2" >   <!-- pt upto 5 only, after tat it becomes auto-->
+      <a class="nav-link" href="index.html">Home</a>
+    </li>
+    <li class="nav-item pt-2">
+      <a class="nav-link" href="About.html">About</a>
+    </li>
+    <li class="nav-item pt-2">
+      <a class="nav-link" href="Gallery.html">Gallery</a>
+    </li>
+    <li class="nav-item pt-2">
+      <a class="nav-link" href="Blogs.html">Blog</a>
+    </li>
+    <li class="nav-item pt-2">
+      <a class="nav-link" href="Contact.html">Contact</a>
+    </li>
+
+  </ul>
+</nav>
+
+<!----------------------- NAV BAR ends here ----------------------->
+
+<!---------------------BLOG body starts here ------------------------------------------->
+
+<body class="w3-light-grey">
+
+<!-- Navigation bar with social media icons -->
+<div class="w3-bar w3-black w3-hide-small">
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-facebook-official"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-instagram"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-snapchat"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-flickr"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-twitter"></i></a>
+  <a href="#" class="w3-bar-item w3-button"><i class="fa fa-linkedin"></i></a>
+  <a href="#" class="w3-bar-item w3-button w3-right"><i class="fa fa-search"></i></a>
+</div>
+  
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1600px">
+
+  <!-- Header -->
+  <header class="w3-container w3-center w3-padding-48 w3-white">
+    <h1 class="donate"><b>Our activities</b></h1>
+    <h6>We update daily <span class="w3-tag">Events</span></h6>
+  </header>
+
+  <!-- Image header -->
+  <header class="w3-display-container w3-wide" id="home">
+    <img class="w3-image" src="E:/Webcode/Donation/Pictures/8.jpg" alt="Donation" width="1600" height="1060">
+    <div class="w3-display-left w3-padding-large">
+      <h1 class="w3-text-white">Daily Donate</h1>
+      <h1 class="w3-jumbo w3-text-white w3-hide-small"><b>Our donation campaigns</b></h1>
+      <h6><button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" onclick="document.getElementById('subscribe').style.display='block'">Donate</button></h6>
+    </div>
+  </header>
+
+  <!-- Grid -->
+  <div class="w3-row w3-padding w3-border">
+
+    <!-- Blog entries -->
+    <div class="w3-col l8 s12">
+    
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>Help the children</h3>
+          <h5>For just a small amount, <span class="w3-opacity">Oct 14, 2019</span></h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="E:/Webcode/Donation/Pictures/9.jpg" alt="Girl Hat" style="width:100%" class="w3-padding-16">
+          <p><strong>Build more houses</strong> There's been a natural disaster and multiple civil houses were destroyed. Come and donate and help people in moutainous areas. People are struggling in these areas and need shelters and groceries.</p>
+          <p>Besure you give people cash or decent groceries. Excessive clothes and accessories are not needed in these circumstances.</p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo1')" id="myBtn"><b>Replies  </b> <span class="w3-tag w3-white">1</span></button></p>
+          <p class="w3-clear"></p>
+          <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
+            <hr>
+              <div class="w3-col l2 m3">
+                <img src="E:/Webcode/Donation/Pictures/10.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Minh Hieu <span class="w3-opacity w3-medium">July 19, 2019, 6:32 PM</span></h4>
+                <p>Daily events Following</p>
+              </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>Support the community</h3>
+          <h5>Connecting friends <span class="w3-opacity">July 20, 2019</span></h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="E:/Webcode/Donation/Pictures/11.jpg" alt="love" style="width:100%" class="w3-padding-16">
+          <p><strong>Shelters</strong> The sample house for families</p>
+          <p>Here's some samples of houses designed by architect in many countries for free. They have created an optimal design that does not require much effort and labor. Hope with our financial support, families in moutainous areas will have some place to live in.</p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo2')"><b>Replies  </b> <span class="w3-tag w3-white">2</span></button></p>
+          <p class="w3-clear"></p>
+          
+          <!-- Example of comment field -->
+          <div id="demo2" style="display:none">
+            <div class="w3-row">
+              <hr>
+              <div class="w3-col l2 m3">
+                <img src="E:/Webcode/Donation/Pictures/12.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Le An <span class="w3-opacity w3-medium">Dec 9, 2019, 10:52 PM</span></h4>
+                <p>Love how you guys spreading this meaningful activities.</p><br>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="E:/Webcode/Donation/Pictures/13.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Minh Hang <span class="w3-opacity w3-medium">June 23, 2020, 9:12 PM</span></h4>
+                <p>Adorable kids</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog entry -->
+      <div class="w3-container w3-white w3-margin w3-padding-large">
+        <div class="w3-center">
+          <h3>Ha le</h3>
+          <h5>How lovely they are<span class="w3-opacity">June 17, 2020</span></h5>
+        </div>
+
+        <div class="w3-justify">
+          <img src="E:/Webcode/Donation/Pictures/14.jpg" alt="Runway" style="width:100%" class="w3-padding-16">
+          <p><strong>Donation is easy</strong> Make a change with a dime</p>
+          <p>We have published an app for you to make daily donation. It will subtract a small amount from your balance and transfer automatically to our funding.</p>
+          <p class="w3-left"><button class="w3-button w3-white w3-border" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+          <p class="w3-right"><button class="w3-button w3-black" onclick="myFunction('demo3')"><b>Replies  </b> <span class="w3-tag w3-white">3</span></button></p>
+          <p class="w3-clear"></p>
+          
+          <!-- Example of comment field -->
+          <div id="demo3" style="display:none">
+            <hr>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="/w3images/girl_mountain.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Nhu Anh <span class="w3-opacity w3-medium">Nov 23, 2020, 7:22 PM</span></h4>
+                <p>You guys are rocks. Big thanks</p>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="Images 1303/p4.jpg" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Phuoc Le <span class="w3-opacity w3-medium">June 8, 2020, 10:32 PM</span></h4>
+                <p>Keep up the GREAT work! I am cheering for you!!</p>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              <div class="w3-col l2 m3">
+                <img src="E:/Webcode/Donation/Pictures/2.png" style="width:90px;">
+              </div>
+              <div class="w3-col l10 m9">
+                <h4>Anja <span class="w3-opacity w3-medium">June 7, 2020, 9:12 PM</span></h4>
+                <p>Cant wait for the runway to start!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    <!-- END BLOG ENTRIES -->
+    </div>
+
+    <!-- About/Information menu -->
+    <div class="w3-col l4">
+      <!-- About Card -->
+      <div class="w3-white w3-margin">
+        <img src="E:/Webcode/Donation/Pictures/3.jpg" alt="Long" style="width:100%" class="w3-grayscale">
+        <div class="w3-container w3-black">
+          <h4>We are Daily Donation</h4>
+          <p>We do charity from our own hearts and we hope to spread the message</p>
+        </div>
+      </div>
+      <hr>
+
+    
+      
+      <!-- Subscribe -->
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>Subscribe</h4>
+        </div>
+        <div class="w3-container w3-white">
+          <br>
+          <p>Enter your e-mail below and get notified on the latest blog posts.</p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+          <p><button type="button" onclick="document.getElementById('subscribe').style.display='block'" class="w3-button w3-block w3-red">Subscribe</button></p>
+        </div>
+      </div>
+
+    <!-- END About/Intro Menu -->
+    </div>
+
+  <!-- END GRID -->
+  </div>
+
+<!-- END w3-content -->
+</div>
+
+<!-- Subscribe Modal -->
+<div id="subscribe" class="w3-modal w3-animate-opacity">
+  <div class="w3-modal-content" style="padding:32px">
+    <div class="w3-container w3-white">
+      <i onclick="document.getElementById('subscribe').style.display='none'" class="fa fa-remove w3-transparent w3-button w3-xlarge w3-right"></i>
+      <h2 class="w3-wide">SUBSCRIBE</h2>
+      <p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('subscribe').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// Toggle between hiding and showing blog replies/comments
+document.getElementById("myBtn").click();
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+function likeFunction(x) {
+  x.style.fontWeight = "bold";
+  x.innerHTML = "✓ Liked";
+}
+</script>
+
+</body>
+</html>
